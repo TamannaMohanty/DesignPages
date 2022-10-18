@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">DesignPages</string>
+    <string name="hey">Hey,</string>
+    <string name="login_now">Login Now,</string>
+    <string name="textview">If you are new /</string>
+    <string name="create_new">Create New</string>
+    <string name="tamannatxtvw">Tamanna Priyadarshini</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password? /</string>
+    <string name="reset">Reset</string>
+    <string name="login">Login</string>
+    <string name="skip_now">Skip Now</string>
+    <string name="card">Photos</string>
+    <string name="Assigned">Assigned</string>
+    <string name="assigned">64</string>
+    <string name="received">Received</string>
+    <string name="Received">45</string>
+    <string name="completed">Completed</string>
+    <string name="Completed">76</string>
+    <string name="text_heading">Complete the profile</string>
+    <string name="linear_text">DCMI</string>
+    <string name="linear_text1">Whatsapp</string>
+    <string name="card_details">Camera</string>
+    <string name="linear_text2">B612</string>
+    <string name="linear_text3">Videos</string>
+    <string name="next">Next</string>
+    <string name="Logout">Logout</string>
+    <string name="welcome">Welcome</string>
+    <string name="ideas_into_reality">ideas into reality</string>
+    <string name="use_to_turn_their">use to turn their</string>
+    <string name="millions_of_people">Millions of people</string>
+    <string name="create_new_user">Create New user</string>
+    <string name="enter_name">Enter Name</string>
+</resources>

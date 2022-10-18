@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/redonwhite" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/capture1"
+        android:layout_marginBottom="100dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            style="@style/Imagegrirl"
+            android:src="@drawable/girl" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:layout_width="281dp"
+                android:layout_height="500dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/ribbon" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="480dp"
+                android:text="@string/welcome" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                style="@style/TextVw"
+                android:text="@string/millions_of_people" />
+
+            <TextView
+                style="@style/TextVw"
+                android:text="@string/use_to_turn_their"
+                />
+
+            <TextView
+                style="@style/TextVw"
+                android:text="@string/ideas_into_reality"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    style="@style/TextVw1"
+                    android:hint="@string/skip_now" />
+
+<!--                <Button-->
+<!--                    android:id="@+id/Next"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/next"-->
+<!--                    android:onClick="next"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:layout_gravity=""/>-->
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Btn2"
+                    android:id="@+id/Next"
+                    android:background="@drawable/radius1"
+                    android:text="@string/next"
+                    android:onClick="next"
+                    app:backgroundTint="#DD8C0E21" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>
