@@ -35,19 +35,21 @@
             android:src="@drawable/redonwhite" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="160dp"
-            android:layout_height="130dp"
+            android:id="@+id/shapableimg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:scaleType="fitCenter"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
             android:src="@drawable/tamanna"
             app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
 
         <ImageView
-            android:layout_width="32dp"
+            android:id="@+id/cam2"
+            android:layout_width="34dp"
             android:layout_height="30dp"
-            android:layout_marginStart="220dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="50dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/circle"
             android:padding="10dp"

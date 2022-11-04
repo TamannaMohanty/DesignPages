@@ -4,6 +4,7 @@
     package="com.tamanna.designpages">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -22,10 +23,10 @@
             android:name=".Design2"
             android:exported="false" />
         <activity
-            android:name=".Design3"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Design3"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

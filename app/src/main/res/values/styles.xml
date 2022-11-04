@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
-        <item name="cornerSize">40%</item>
+        <item name="cornerSize">50%</item>
     </style>
 
     <style name="TextVw">
@@ -13,8 +13,6 @@
     </style>
 
     <style name="TextVw1">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_marginTop">10dp</item>
         <item name="android:textColor">@color/black</item>
@@ -22,8 +20,6 @@
     </style>
 
     <style name="TextVw3">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">10dp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/black</item>

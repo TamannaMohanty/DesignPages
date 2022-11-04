@@ -83,11 +83,11 @@
                 android:layout_marginTop="30dp">
 
                 <TextView
-                    android:layout_weight="1"
-                    style="@style/TextVw1"
-                    android:hint="@string/skip_now" />
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:hint="@string/skip_now"/>
 
-<!--                <Button-->
+<!--            <Button-->
 <!--                    android:id="@+id/Next"-->
 <!--                    android:layout_width="wrap_content"-->
 <!--                    android:layout_height="wrap_content"-->
