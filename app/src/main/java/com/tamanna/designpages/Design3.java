@@ -29,9 +29,10 @@ public class Design3 extends AppCompatActivity {
 
    FloatingActionButton camera, gallery;
    TextView logout;
-   ImageView camera2;
    ShapeableImageView imageView;
+   ImageView camera2;
     Uri imageUri;
+    Bitmap photo;
 
     //ViewModel Declaration
     MyViewModel myViewModel;
@@ -53,9 +54,7 @@ public class Design3 extends AppCompatActivity {
 
      logout =findViewById(R.id.logout);
 
-
         myViewModel = new ViewModelProvider(this).get(MyViewModel.class);
-
 
      camera2.setOnClickListener(new View.OnClickListener() {
          @Override
@@ -70,13 +69,6 @@ public class Design3 extends AppCompatActivity {
             public void onClick(View v) {
 
               askPermission();
-
-//
-//                    Intent cameraIntent = new Intent();
-//                    cameraIntent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
-//                   startActivityForResult(cameraIntent,pic_id);
-
-
 
 
                 Toast.makeText(Design3.this, "clicked", Toast.LENGTH_SHORT).show();
@@ -105,10 +97,12 @@ public class Design3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-//                Intent intent = new Intent("com.sec.android.app.myfiles.PICK_DATA");
-//                intent.setType("image/*");
-//                intent.setAction(Intent.ACTION_GET_CONTENT);
-//                startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE);
+                Intent intent = new Intent("com.sec.android.app.myfiles.PICK_DATA");
+                intent.setType("image/*");
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                // pass the constant to compare it
+                // with the returned requestCode
+                startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE);
 
 
             }
@@ -118,14 +112,18 @@ public class Design3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                // create an instance of the
-                // intent of the type image
+//                 create an instance of the
+//                 intent of the type image
                 Intent intent = new Intent("com.sec.android.app.myfiles.PICK_DATA");
                 intent.setType("image/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 // pass the constant to compare it
                 // with the returned requestCode
                 startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE);
+                imageView.setImageBitmap(photo);
+//                Intent intent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//                startActivity(intent);
+
 
             }
         });
@@ -175,7 +173,6 @@ public class Design3 extends AppCompatActivity {
             imageUri = data.getData();
             // update the preview image in the layout
 
-
             imageView.setImageURI(imageUri);
 
             Toast.makeText(this, "Image picked ", Toast.LENGTH_SHORT).show();
@@ -192,8 +189,6 @@ public class Design3 extends AppCompatActivity {
             Toast.makeText(this, "Default Dp", Toast.LENGTH_SHORT).show();
        }
     }
-
-
 
 
     private void openCamera() {
