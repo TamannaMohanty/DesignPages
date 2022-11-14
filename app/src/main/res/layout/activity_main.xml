@@ -101,7 +101,6 @@
                     android:id="@+id/Next"
                     android:background="@drawable/radius1"
                     android:text="@string/next"
-                    android:onClick="next"
                     app:backgroundTint="#DD8C0E21" />
 
             </LinearLayout>

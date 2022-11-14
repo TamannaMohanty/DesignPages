@@ -65,30 +65,6 @@ public class Design2 extends AppCompatActivity {
      });
     }
 
-
-
-
-//        public void login(View view) {
-//
-//            if(name.getText().toString().equals(username) && password.getText().toString().equals(mypassword))
-//            {
-//                Toast.makeText(Design2.this, "Login Successful", Toast.LENGTH_SHORT).show();
-//
-//                Intent intent=new Intent(Design2.this,Design3.class);
-//                startActivity(intent);
-//            }
-//
-//            else
-//            {
-//
-//                Toast.makeText(Design2.this, "Enter Valid Name and Password", Toast.LENGTH_SHORT).show();
-//
-//
-//
-
-
-
-
         public void createnew(View view){
 
             Intent intent=new Intent(Design2.this,CreateNew.class);
@@ -97,15 +73,6 @@ public class Design2 extends AppCompatActivity {
     }
 
 
-
-
-//      login.setOnClickListener(new View.OnClickListener() {
-//          @Override
-//          public void onClick(View view) {
-//
-//
-//      }
-//    });
 
 
 

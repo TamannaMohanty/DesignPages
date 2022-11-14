@@ -23,11 +23,10 @@
             android:name=".Design2"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
             android:name=".Design3"
             android:exported="true">
+<!--            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden">-->
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

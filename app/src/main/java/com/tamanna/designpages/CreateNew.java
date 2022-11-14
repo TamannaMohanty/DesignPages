@@ -51,14 +51,9 @@ public class CreateNew extends AppCompatActivity {
 
 
                         }
-
                         }
-
-
                 }
                 );
-
-
 
 
 
@@ -94,10 +89,6 @@ public class CreateNew extends AppCompatActivity {
             newuserpwd.setError("Please enter 6 characters only ");
 
         }
-
-
-
-
         return false;
     }
 
